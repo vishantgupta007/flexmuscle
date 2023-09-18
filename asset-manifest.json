@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flexmuscle/static/css/main.28e16899.css",
-    "main.js": "/flexmuscle/static/js/main.59eb04b6.js",
+    "main.js": "/flexmuscle/static/js/main.a4e371a2.js",
     "static/media/header_bg_3.jpg": "/flexmuscle/static/media/header_bg_3.20aac8db63049715cbd1.jpg",
     "static/media/main_header.png": "/flexmuscle/static/media/main_header.cfdd71eb8ee4127d40dd.png",
     "static/media/header_bg_5.jpg": "/flexmuscle/static/media/header_bg_5.1779114ab5e3f0403a12.jpg",
@@ -37,10 +37,10 @@
     "static/media/how.webp": "/flexmuscle/static/media/how.7ce4ada96b9d86e9a99a.webp",
     "index.html": "/flexmuscle/index.html",
     "main.28e16899.css.map": "/flexmuscle/static/css/main.28e16899.css.map",
-    "main.59eb04b6.js.map": "/flexmuscle/static/js/main.59eb04b6.js.map"
+    "main.a4e371a2.js.map": "/flexmuscle/static/js/main.a4e371a2.js.map"
   },
   "entrypoints": [
     "static/css/main.28e16899.css",
-    "static/js/main.59eb04b6.js"
+    "static/js/main.a4e371a2.js"
   ]
 }
