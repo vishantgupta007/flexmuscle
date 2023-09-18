@@ -1,0 +1,16 @@
+.notfound-container {
+	width: 100%;
+}
+
+.notfound-container .btn {
+	margin-top: 2rem;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+	.notfound-container {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 1.3;
+	}
+}

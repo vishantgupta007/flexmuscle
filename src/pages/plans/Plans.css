@@ -1,0 +1,53 @@
+.plans-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	margin-top: 9rem;
+}
+
+.plans-container button,
+.plans-container p {
+	margin-top: 1.5rem;
+}
+
+.plans-container small {
+	color: var(--color-gray-300);
+}
+
+.plans-container h1 {
+	display: inline;
+	color: var(--color-primary-variant);
+}
+
+.plans-container h2 {
+	display: inline;
+	color: var(--color-gray-400);
+}
+
+.plans-container small,
+.plans-container h2 {
+	margin-bottom: 2rem;
+}
+
+h4 {
+	margin: 1rem 0;
+}
+
+.disable {
+	color: var(--color-gray-300);
+}
+
+@media screen and (max-width: 1024px) {
+	.plans-container {
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	.plans-container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		width: 90%;
+		margin-inline: auto;
+	}
+}

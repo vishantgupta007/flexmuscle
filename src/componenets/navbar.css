@@ -1,0 +1,143 @@
+nav {
+	height: 5rem;
+	width: 100vw;
+	background: var(--color-primary);
+	display: grid;
+	place-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.nav-container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 3.5rem;
+	perspective: 400px;
+}
+
+.nav-links a {
+	color: var(--color-gray-100);
+	transition: var(--transition);
+	font-size: 1.09rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.nav-links a:hover {
+	color: var(--color-secondary);
+}
+
+.logo-img {
+	width: 10rem;
+	display: block;
+}
+
+.nav-toggle-btn {
+	display: none;
+}
+
+/*------------ Need repair-------- */
+
+.active-nav {
+	position: relative;
+}
+
+.nav-link.active {
+	font-weight: bold;
+	color: #e88b8b;
+}
+
+/* --------------------------- */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+	.nav-toggle-btn {
+		display: inline-block;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		font-size: 2rem;
+	}
+
+	.nav-toggle-btn svg {
+		color: var(--color-gray-100);
+	}
+	.nav-links {
+		position: absolute;
+		top: 100%;
+		right: -13%;
+		flex-direction: column;
+		gap: 1rem;
+		background: rgba(97, 106, 206);
+		/* backdrop-filter: blur(10px); */
+		padding: 1rem 2rem;
+	}
+	.nav-links li {
+		height: 4rem;
+		width: 100%;
+		box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.3);
+		padding: 1rem 2rem;
+		transition: var(--transition);
+		animation: navAnimation 300ms ease forwards;
+		transform: rotateX(90deg);
+		opacity: 0;
+		transform-origin: top;
+	}
+
+	.nav-links li:nth-child(2) {
+		animation-delay: 200ms;
+	}
+
+	.nav-links li:nth-child(3) {
+		animation-delay: 400ms;
+	}
+
+	.nav-links li:nth-child(4) {
+		animation-delay: 600ms;
+	}
+
+	.nav-links li:nth-child(5) {
+		animation-delay: 800ms;
+	}
+
+	.nav-links li:nth-child(6) {
+		animation-delay: 1000ms;
+	}
+
+	@keyframes navAnimation {
+		to {
+			transform: rotateX(0);
+			opacity: 1;
+		}
+	}
+	.nav-links li:hover {
+		background: var(--color-gray-300);
+		border-radius: 4px;
+	}
+	.nav-links li a {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	/* for toggle  */
+	.show-nav {
+		display: flex;
+	}
+	.hide-nav {
+		display: none;
+	}
+}

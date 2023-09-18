@@ -1,0 +1,44 @@
+.about-story-container,
+.mission-story-container,
+.vision-story-container {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	margin-top: 10rem;
+	gap: 10%;
+	letter-spacing: 1.3px;
+	color: var(--color-gray-300);
+	align-items: center;
+}
+
+.about-section-image img {
+	border-radius: 20%;
+}
+
+.about-section-content h1 {
+	margin-bottom: 2rem;
+}
+.about-section-content p {
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.about-section-image {
+		width: 60%;
+		margin: -2rem auto;
+	}
+
+	.about-section-content h1 {
+		margin-bottom: 1.2rem;
+	}
+
+	.about-story-container,
+	.mission-story-container,
+	.vision-story-container {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.vision-story .about-section-image {
+		grid-row: 1;
+	}
+}
