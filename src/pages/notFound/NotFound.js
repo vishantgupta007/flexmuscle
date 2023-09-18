@@ -9,7 +9,7 @@ const Notfound = () => {
 		<section>
 			<div className="container notfound-container">
 				<Header title="Click the button to begin the journey " image={NotFound}>
-					<Link to="/home" className="btn">
+					<Link to="/" className="btn">
 						
 						Let's Begin
 					</Link>
